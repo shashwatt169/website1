@@ -10,58 +10,116 @@
 
   gtag('config', 'G-T7LZ3BT5MR');
 </script>
-        <meta charset="utf-8">
-        <meta name-="viewport" content="width=device-width, initial-scale=1">
-        <title>My First Website</title>
-    </head>
-    <body>
-        <h1>Welcome to the site!!</h1>
-        <h2>Learning HTML</h2>
-        Comparison of diffrent websites
-        <p>
-        We will compare different websites like <b>Collegedunia, Shiksha, Careers360</b> and compare their traffic on diffrent websites.
-
-        </p>
-        <br>Websites we've Check traffic on-
-        <ul>
-            <li>Semrush </li>
-            <li>Seranking </li>
-        </ul><br>
-        <table border="10">
-            <tr>
-                <th>Company/Traffic Checker Website Name</th>
-                <th>Semrush</th>
-                <th>SEranking</th>
-            </tr>
-            <tr>
-                 <td>Shiksha</td>
-                 <td>48.8M</td>
-                 <td>21.2M</td>
-            </tr>
-            <tr>
-                <td>Careers360</td>
-                <td>14M</td>
-                <td>4.2M</td>
-            </tr>
-            <tr>
-                <td>CollegeDunia</td>
-            <td>9.6M</td>
-            <td>5M</td>
-            </tr>
-
-        </table>
-        <a href="https://docs.google.com/document/d/1heMjSysselhtnvQfH5i_ENpvVtDcVpbxIuFzo4cKGXM/edit" target="blank"> Want to know about traffic on other websites?</a>
         
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4400b1;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .content {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            background-color: #e7f1ff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            margin-top: 20px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="submit"] {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            background-color: #1b007a;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #4806fd;
+        }
+        hr {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Finder</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <p>Welcome to our college search tool! Here you can find colleges based on different streams and programs.</p>
+        </div>
+        <hr>
+        <form action="/submit-form" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="stream">Preferred Stream:</label>
+            <input type="text" id="stream" name="stream" required>
 
-
-
-    <footer>
-        <p> &copy; Made by Shashwat</p>
-    </footer>
-    </body>
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+        <div class="news">
+            <h2>Latest News in Education</h2>
+                <a href="https://www.ndtv.com/india-news/new-rules-for-college-admissions-5-point-guide-2835751" target="blank">New Guidelines for College Admissions</a>
+                <br> <p></p>
+            <a href="https://joinrise.co/blog/top-emerging-job-sectors-2024/" target="blank">Top 10 Emerging Career Paths in 2024</a>
+        </div>
+        <hr>
+        <div class="notifications">
+            
+            <h2>Important Notifications</h2>
+            <article>
+                <p><strong>Deadline Alert:</strong> The application deadline for most colleges is approaching. Ensure that you complete your applications before the end of the month.</p>
+            </article>
+            <article>
+                <p><strong>Scholarship Opportunities:</strong> New scholarship opportunities are now available for various streams. Visit the college's scholarship page for more details.</p>
+            </article>
+        </div>
+        <hr>
+        <div class="about-us">
+            <h2>About Us</h2>
+            <p>We are a dedicated team committed to helping students find the best colleges based on their preferred streams. Our goal is to provide accurate and up-to-date information to aid students in making informed decisions about their education.</p>
+            <p>For more information, visit our <a href="about-us.html" target="blank">About Us</a> page.</p>
+        </div>
+    </div>
+</body>
 </html>
+
 
 
 
